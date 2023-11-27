@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 public static class DependencyInjectionExtensions
 {
     public static IServiceCollection AddDefinitions(this IServiceCollection services, IConfiguration configuration, Action<DefinitionConfiguration>? configure = null)
-        => AddDefinitions(services, configuration, configure);
+        => AddDefinitions(services, new ServiceDefinitionContext(services, configuration), configure);
 
     public static IServiceCollection AddDefinitions(this IServiceCollection services, IServiceDefinitionContext context, Action<DefinitionConfiguration>? configure = null)
     {

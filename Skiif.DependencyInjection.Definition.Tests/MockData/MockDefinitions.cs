@@ -1,4 +1,5 @@
-﻿using Skiif.DependencyInjection.Definition.Definition;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Skiif.DependencyInjection.Definition.Definition;
 using Skiif.DependencyInjection.Definition.Definition.Context;
 
 namespace Skiif.DependencyInjection.Definition.Tests.MockData;
@@ -14,7 +15,7 @@ public class MockDefinition1 : IApplicationDefinition
 
     public void ConfigureServices(IServiceDefinitionContext context)
     {
-        
+        context.Services.AddTransient<MockService>();
     }
 }
 
@@ -30,7 +31,7 @@ public class MockDefinition2 : IApplicationDefinition
 
     public void ConfigureServices(IServiceDefinitionContext context)
     {
-
+        context.Services.AddTransient<MockService>();
     }
 }
 
@@ -46,6 +47,6 @@ public class MockDefinition3 : IApplicationDefinition
 
     public void ConfigureServices(IServiceDefinitionContext context)
     {
-
+        context.Services.AddTransient<MockService>();
     }
 }
