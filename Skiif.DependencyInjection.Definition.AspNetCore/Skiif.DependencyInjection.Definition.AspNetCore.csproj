@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Skiif</Authors>
+    <Version>1.0.0</Version>
     <Description>Support Asp.Net for Skiif.DependencyInjection.Definition</Description>
     <PackageProjectUrl>https://github.com/Skiif64/Skiif.DependencyInjection.Definition</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Skiif64/Skiif.DependencyInjection.Definition</RepositoryUrl>
